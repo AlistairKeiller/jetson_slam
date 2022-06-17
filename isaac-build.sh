@@ -4,7 +4,7 @@
 
 # set config variables
 DEVICE=jetpack45
-APP=//apps/samples/stereo_dummy:stereo_dummy-pkg
+APP=packages/visual_slam/apps:elbrus_visual_slam_realsense
 
 # build the bazel package
 cd engine
