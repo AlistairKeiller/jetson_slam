@@ -7,11 +7,13 @@ DEVICE=jetpack45
 APP=//apps/samples/stereo_dummy:stereo_dummy-pkg
 
 # build the bazel package
-../engine/engine/build/scripts/install_dependencies.sh
+cd engine
+engine/build/scripts/install_dependencies.sh
+cd ../sdk
 ../engine/engine/build/scripts/prepare_minidump_tools.sh
 bazel build --config $DEVICE $APP --strip=always
 
-# save the location
+# print the location
 echo $(pwd)/$(bazel aquery --config $DEVICE $APP --output=jsonproto | jq -r '
             .artifacts |
             .[] |
