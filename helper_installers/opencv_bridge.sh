@@ -1,0 +1,7 @@
+#!/bin/bash
+# https://github.com/IOdissey/VINS-Fusion-GPU
+mkdir -p catkin_ws/src
+cd catkin_ws/src
+git clone https://github.com/ros-perception/vision_opencv
+cd ..
+catkin_make
