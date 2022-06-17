@@ -3,7 +3,7 @@
 # this is inspired by isaac-sdk/engine/engine/build/deploy.sh
 
 # set config variables
-DEVICE=jetpack46
+DEVICE=jetpack45
 APP=//apps/samples/stereo_dummy:stereo_dummy-pkg
 
 # build the bazel package
