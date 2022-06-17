@@ -2,7 +2,6 @@
 # https://github.com/introlab/rtabmap/wiki/Installation#if-ros-is-not-installed
 
 # build dependencies
-apt-get update
 for dep in setup nvidia realsense gstam g2o libnano libpointmatcher opencv
 do
   bash helper_installers/${dep}.sh

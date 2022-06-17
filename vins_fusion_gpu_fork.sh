@@ -2,7 +2,6 @@
 # https://github.com/IOdissey/VINS-Fusion-GPU
 
 # build dependencies
-apt-get update
 for dep in setup ros opencv_bridge #setup nvidia ros ceres opencv opencv_bridge
 do
   bash helper_installers/${dep}.sh
