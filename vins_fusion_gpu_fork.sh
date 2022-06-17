@@ -8,7 +8,11 @@ do
   bash helper_installers/${dep}.sh
 done
 
+# install apt dependencies
+apt-get install -y --no-install-recommends ros-noetic-tf ros-noetic-image-transport
+
 # build vins_fusion
+source /opt/ros/noetic/setup.bash
 mkdir -p catkin_ws/src
 cd catkin_ws/src
 git clone https://github.com/pjrambo/VINS-Fusion-gpu

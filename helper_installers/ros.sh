@@ -7,7 +7,6 @@ apt-get -y --no-install-recommends install \
     ros-noetic-desktop-full \
     python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential \
     python3-rosdep
-echo "source /opt/ros/noetic/setup.bash" | tee -a ~/.bashrc
-source ~/.bashrc
+source /opt/ros/noetic/setup.bash
 rosdep init
 rosdep update
