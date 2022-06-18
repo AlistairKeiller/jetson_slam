@@ -5,7 +5,7 @@
 bash helper_installers/setup.sh
 
 # install dependencies
-apt-get install clang libc++-dev libgtk2.0-dev libgstreamer1.0-dev libvtk6-dev libavresample-dev libglfw3-dev libglfw3 libglew-dev libxkbcommon-dev libavcodec-dev libswscale-dev libavformat-dev
+apt-get install -y --no-install-recommends clang libc++-dev libgtk2.0-dev libgstreamer1.0-dev libvtk6-dev libavresample-dev libglfw3-dev libglfw3 libglew-dev libxkbcommon-dev libavcodec-dev libswscale-dev libavformat-dev
 
 # build HybVIO
 git clone --recursive https://github.com/SpectacularAI/HybVIO
