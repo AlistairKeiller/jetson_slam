@@ -14,7 +14,7 @@ apt-get install -y --no-install-recommends ros-noetic-tf ros-noetic-image-transp
 source /opt/ros/noetic/setup.bash
 mkdir -p catkin_ws/src
 cd catkin_ws/src
-git clone https://github.com/pjrambo/VINS-Fusion-gpu
+git clone https://github.com/IOdissey/VINS-Fusion-GPU
 cd ..
 catkin_make
 source $(pwd)/devel/setup.bash
