@@ -10,7 +10,7 @@ apt-get install -y --no-install-recommends gfortran libglfw3-dev clang libgtk2.0
 # build HybVIO
 git clone --recursive https://github.com/SpectacularAI/HybVIO
 cd HybVIO/3rdparty/mobile-cv-suite
-CC=clang CXX=clang++ ./scripts/build.sh
+CC=clang CXX=clang++ OPENBLAS=OFF ./scripts/build.sh
 # cd ../../
 # ./src/slam/download_orb_vocab.sh
 # CC=clang CXX=clang++ cmake -DBUILD_VISUALIZATIONS=ON -DUSE_SLAM=ON -S . -B build
