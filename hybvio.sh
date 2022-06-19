@@ -12,7 +12,7 @@ libopenblas-dev # installing openblas package becuase building caaues error
 git clone --recursive https://github.com/SpectacularAI/HybVIO
 cd HybVIO/3rdparty/mobile-cv-suite
 CC=clang CXX=clang++ OPENBLAS=OFF ./scripts/build.sh
-# cd ../../
-# ./src/slam/download_orb_vocab.sh
-# CC=clang CXX=clang++ cmake -DBUILD_VISUALIZATIONS=ON -DUSE_SLAM=ON -S . -B build
-# cmake --build build -j 4
+cd ../../
+./src/slam/download_orb_vocab.sh
+CC=clang CXX=clang++ cmake -DBUILD_VISUALIZATIONS=ON -DUSE_SLAM=ON -S . -B build
+cmake --build build -j 4
