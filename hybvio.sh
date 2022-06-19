@@ -5,7 +5,8 @@
 bash helper_installers/setup.sh
 
 # install dependencie
-apt-get install -y --no-install-recommends gfortran libglfw3-dev clang libgtk2.0-dev libgstreamer1.0-dev libvtk6-dev libavresample-dev mesa-common-dev libglew-dev libxkbcommon-dev wayland-protocols python3-distutils python3-dev
+apt-get install -y --no-install-recommends gfortran libglfw3-dev clang libgtk2.0-dev libgstreamer1.0-dev libvtk6-dev libavresample-dev mesa-common-dev libglew-dev libxkbcommon-dev wayland-protocols python3-distutils python3-dev \
+libopenblas-dev # installing openblas package becuase building caaues error
 
 # build HybVIO
 git clone --recursive https://github.com/SpectacularAI/HybVIO
