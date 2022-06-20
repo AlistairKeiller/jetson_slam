@@ -39,7 +39,10 @@ cmake -D CUDA_HOST_COMPILER:FILEPATH=/usr/bin/gcc-8 \
 -D PYTHON3_PACKAGES_PATH=/usr/lib/python3/dist-packages \
 -D OPENCV_GENERATE_PKGCONFIG=ON \
 -D BUILD_EXAMPLES=OFF -S . -B build
+echo "Building OpenCV"
 cmake --build build -j 4
+echo "Removing opencv2"
 rm -r /usr/include/opencv4/opencv2
+echo "Installing opencv2"
 cmake --install build
 ldconfig
