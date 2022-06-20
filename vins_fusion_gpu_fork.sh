@@ -1,9 +1,9 @@
 #!/bin/bash
-# **IMPORTANT** This must be run on ubuntu 18.04 because ROS melodic
+# **IMPORTANT** This must be run on ubuntu 18.04 because ROS melodic, for this I recommended nvidia jetpack
 # https://github.com/IOdissey/VINS-Fusion-GPU
 
 # build dependencies
-for dep in setup nvidia ros_melodic ceres opencv opencv_bridge
+for dep in setup nvidia ros_melodic cmake ceres opencv opencv_bridge
 do
   bash helper_installers/${dep}.sh
 done
