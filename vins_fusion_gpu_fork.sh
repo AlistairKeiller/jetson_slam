@@ -3,7 +3,7 @@
 # https://github.com/IOdissey/VINS-Fusion-GPU
 
 # build dependencies
-for dep in setup cmake ros_melodic ceres opencv opencv_bridge
+for dep in setup nvidia cmake ros_melodic ceres opencv opencv_bridge
 do
   bash helper_installers/${dep}.sh
 done
