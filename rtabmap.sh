@@ -8,7 +8,7 @@ do
 done
 
 # install apt dependencies
-apt-get install -y --no-install-recommends libsqlite3-dev libpcl-dev libopencv-dev git cmake libproj-dev libqt5svg5-dev
+apt-get install -y --no-install-recommends libsqlite3-dev libpcl-dev git libproj-dev libqt5svg5-dev
 
 # build rtabmap
 git clone https://github.com/introlab/rtabmap
