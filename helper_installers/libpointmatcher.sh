@@ -1,6 +1,5 @@
 #!/bin/bash
 # https://github.com/ethz-asl/libpointmatcher
-apt-get install -y --no-install-recommends libeigen3-dev libboost-all-dev
 git clone https://github.com/ethz-asl/libpointmatcher
 cd libpointmatcher
 cmake -S . -B build
