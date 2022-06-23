@@ -6,8 +6,7 @@ ldconfig
 git clone https://github.com/opencv/opencv
 git clone https://github.com/opencv/opencv_contrib
 cd opencv
-export CUDACXX="/usr/local/cuda/bin/nvcc"
-cmake -D CUDA_HOST_COMPILER:FILEPATH=/usr/bin/gcc-8 \
+CUDACXX=/usr/local/cuda/bin/nvcc cmake -D CUDA_HOST_COMPILER:FILEPATH=/usr/bin/gcc-8 \
 -D CMAKE_BUILD_TYPE=RELEASE \
 -D CMAKE_INSTALL_PREFIX=/usr \
 -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \
