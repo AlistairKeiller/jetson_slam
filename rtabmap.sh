@@ -1,8 +1,9 @@
 #!/bin/bash
 # https://github.com/introlab/rtabmap/wiki/Installation#if-ros-is-not-installed
+set -e
 
 # build dependencies
-for dep in setup nvidia pcl realsense gstam g2o libnano libpointmatcher ceres opencv octomap
+for dep in setup nvidia gstam g2o libnano libpointmatcher ceres realsense octomap pcl opencv
 do
   bash helper_installers/${dep}.sh
 done
