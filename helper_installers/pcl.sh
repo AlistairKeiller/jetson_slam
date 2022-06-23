@@ -3,6 +3,6 @@
 apt-get install -y --no-install-recommends libboost-all-dev libeigen3-dev libflann-dev libopenni-dev libopenni2-dev libvtk6-dev libvtk6-qt-dev
 git clone https://github.com/PointCloudLibrary/pcl
 cd pcl
-cmake -DCMAKE_BUILD_TYPE=Release -S . -B build
+CUDACXX=/usr/local/cuda/bin/nvcc cmake -DCMAKE_BUILD_TYPE=Release -S . -B build
 cmake --build build -j 4
 cmake --install build
