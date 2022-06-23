@@ -3,13 +3,13 @@
 set -e
 
 # build dependencies
-for dep in setup nvidia gstam g2o libnano libpointmatcher ceres realsense octomap pcl opencv
+for dep in setup nvidia gtsam g2o libnano libpointmatcher ceres realsense pcl opencv
 do
   bash helper_installers/${dep}.sh
 done
 
 # install apt dependencies
-apt-get install -y --no-install-recommends libsqlite3-dev libproj-dev libqt5svg5-dev
+apt-get install -y --no-install-recommends libsqlite3-dev libproj-dev libqt5svg5-dev liboctomap-dev
 
 # build rtabmap
 git clone https://github.com/introlab/rtabmap
