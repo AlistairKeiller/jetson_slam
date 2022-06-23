@@ -5,4 +5,4 @@ git clone https://ceres-solver.googlesource.com/ceres-solver
 cd ceres-solver
 cmake -S . -B build
 cmake --build build -j 4
-cmake --install build -j 4
+cmake --install build

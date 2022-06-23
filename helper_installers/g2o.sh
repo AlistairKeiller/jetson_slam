@@ -5,4 +5,4 @@ git clone https://github.com/RainerKuemmerle/g2o
 cd g2o
 cmake -DBUILD_WITH_MARCH_NATIVE=OFF -DG2O_BUILD_APPS=OFF -DG2O_BUILD_EXAMPLES=OFF -DG2O_USE_OPENGL=OFF -S . -B build
 cmake --build build -j 4
-cmake --install build -j 4
+cmake --install build

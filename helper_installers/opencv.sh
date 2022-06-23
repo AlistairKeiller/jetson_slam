@@ -41,5 +41,5 @@ cmake -D CUDA_HOST_COMPILER:FILEPATH=/usr/bin/gcc-8 \
 -D BUILD_EXAMPLES=OFF -S . -B build
 cmake --build build -j 4
 rm -r /usr/include/opencv4/opencv2
-cmake --install build -j 4
+cmake --install build
 ldconfig

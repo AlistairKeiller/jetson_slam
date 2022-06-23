@@ -5,4 +5,4 @@ git clone https://github.com/ethz-asl/libnabo
 cd libnabo
 cmake -S . -B build
 cmake --build build -j 4
-cmake --install build -j 4
+cmake --install build

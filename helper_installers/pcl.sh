@@ -5,4 +5,4 @@ git clone https://github.com/PointCloudLibrary/pcl
 cd pcl
 cmake -DCMAKE_BUILD_TYPE=Release -S . -B build
 cmake --build build -j 4
-cmake --install build -j 4
+cmake --install build
