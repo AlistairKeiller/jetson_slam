@@ -4,7 +4,6 @@ apt-get install -y --no-install-recommends git libssl-dev libusb-1.0-0-dev libud
 git clone https://github.com/IntelRealSense/librealsense
 cd librealsense
 ./scripts/setup_udev_rules.sh
-export CUDACXX="/usr/local/cuda/bin/nvcc"
-cmake -DBUILD_EXAMPLES=false -DCMAKE_BUILD_TYPE=release -DBUILD_WITH_CUDA=true -S . -B build
+CC=/usr/local/bin/gcc-9 CXX=/usr/local/bin/g++-9 CUDACXX=/usr/local/cuda/bin/nvcc cmake -DBUILD_EXAMPLES=false -DCMAKE_BUILD_TYPE=release -DBUILD_WITH_CUDA=true -S . -B build
 cmake --build build -j 4
 cmake --install build
