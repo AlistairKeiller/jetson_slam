@@ -14,6 +14,6 @@ apt-get install -y --no-install-recommends libsqlite3-dev libproj-dev libqt5svg5
 # build rtabmap
 git clone https://github.com/introlab/rtabmap
 cd rtabmap
-cmake -S . -B build
+cmake -DWITH_TORCH=ON -DTorch_DIR=$(pwd)/../libtorch/share/cmake/Torch -S . -B build
 cmake --build build -j 4
 cmake --install build
