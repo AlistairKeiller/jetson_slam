@@ -16,9 +16,7 @@ git clone https://github.com/introlab/rtabmap
 cd rtabmap
 
 pip3 install gdown
-gdown https://drive.google.com/uc?id=1izv6kmcnqXk9i7-Ey-vldjC-CGfHOGCl
-sudo tar -xf libtorch-1.10.0-Jetson-aarch64-GPU.tar.gz
-rm libtorch-1.10.0-Jetson-aarch64-GPU.tar.gz
+gdown https://drive.google.com/uc?id=1izv6kmcnqXk9i7-Ey-vldjC-CGfHOGCl -O - --quiet | tar -x
 
 CUDACXX=/usr/local/cuda/bin/nvcc cmake -WITH_CERES=ON -DWITH_TORCH=ON -DTorch_DIR=$(pwd)/libtorch/share/cmake/Torch -S . -B build
 cmake --build build -j 4
