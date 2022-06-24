@@ -16,8 +16,6 @@ TORCH_DIR=$(pwd)/pytorch/torch/share/cmake/Torch
 git clone https://github.com/introlab/rtabmap
 cd rtabmap
 
-bash ../helper_installers/libtorch.sh
-
 CUDACXX=/usr/local/cuda/bin/nvcc cmake -WITH_CERES=ON -DWITH_TORCH=ON -DTorch_DIR=${TORCH_DIR} -S . -B build
 cmake --build build -j 4
 cmake --install build
