@@ -14,9 +14,11 @@ apt-get install -y --no-install-recommends libsqlite3-dev git cmake libproj-dev 
 # build rtabmap
 git clone https://github.com/introlab/rtabmap
 cd rtabmap
+
 wget -O libtorch.zip https://download.pytorch.org/libtorch/nightly/cu102/libtorch-cxx11-abi-shared-with-deps-latest.zip
 unzip libtorch.zip
 rm libtorch.zip
-cmake -DWITH_TORCH=ON -WITH_CERES=ON -DTorch_DIR=$(pwd)/../libtorch/share/cmake/Torch -S . -B build
+
+CUDACXX=/usr/local/cuda/bin/nvcc cmake -DWITH_TORCH=ON -WITH_CERES=ON -DTorch_DIR=$(pwd)/libtorch/share/cmake/Torch -S . -B build
 cmake --build build -j 4
 cmake --install build
