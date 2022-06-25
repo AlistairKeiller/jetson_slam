@@ -3,7 +3,7 @@
 set -e
 
 # build dependencies
-for dep in setup nvidia gtsam g2o libnano libpointmatcher ceres realsense pcl opencv libtorch
+for dep in setup nvidia gtsam g2o libnabo libpointmatcher ceres realsense pcl opencv libtorch
 do
   bash helper_installers/${dep}.sh
 done
