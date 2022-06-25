@@ -1,6 +1,6 @@
 #!/bin/bash
 # https://github.com/ethz-asl/libpointmatcher
-# assumes libnano.sh was run first
+# assumes libnabo.sh was run first
 git clone https://github.com/ethz-asl/libpointmatcher
 cd libpointmatcher
 cmake -DCMAKE_BUILD_TYPE=Release -S . -B build
