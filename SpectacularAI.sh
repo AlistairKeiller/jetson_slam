@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 pip install gdown
-~/.local/bin/gdown ${GID} -O - --quiet | tar -xz
+~/.local/bin/gdown https://drive.google.com/uc?id=${GID} -O - --quiet | tar -xz
