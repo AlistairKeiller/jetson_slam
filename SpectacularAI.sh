@@ -1,3 +1,3 @@
 #!/bin/bash
-pip3 install gdown
+pip install gdown
 gdown ${GID} -O - --quiet | tar -xz
